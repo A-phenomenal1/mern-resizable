@@ -15,7 +15,7 @@ app.use(formRouter);
 app.use(CountClick);
 
 if (process.env.Node_ENV === "production") {
-  app.use(express.static("/client/build"));
+  app.use(express.static("client/build"));
 }
 const port = process.env.PORT || 4000;
 
