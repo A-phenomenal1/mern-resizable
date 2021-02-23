@@ -1,0 +1,72 @@
+.title2 {
+  width: 200px;
+  font-size: 1.2em;
+  font-weight: 600;
+  font-family: fantasy;
+  padding: 10px;
+  color: #000;
+}
+
+.heading {
+  font-size: 1.5em;
+  font-weight: bold;
+  font-family: fantasy;
+  text-decoration: underline;
+  color: rebeccapurple;
+}
+
+.formContainer {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 1em;
+  overflow: hidden;
+}
+
+.input-field {
+  max-width: 50%;
+  height: 1.8em;
+  font-size: 1.05em;
+  font-weight: 500;
+  padding-left: 5px;
+  margin-left: 10px;
+  border-radius: 10px;
+  color: #000;
+}
+
+.input-field:focus {
+  outline: none;
+}
+
+.btn-container {
+  width: 100%;
+  text-align: center;
+}
+.btn {
+  font-size: 1em;
+  font-family: Open-sans, serif;
+  font-weight: 500 !important;
+  background-blend-mode: overlay;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  transform: scale(1.05) !important;
+}
+
+.btn:focus {
+  outline: none;
+  border: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .title2 {
+    max-width: 35%;
+    font-size: 1.1em;
+  }
+  .input-field {
+    max-width: 60%;
+  }
+}
