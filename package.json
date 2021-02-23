@@ -1,0 +1,25 @@
+{
+  "name": "client-backend",
+  "version": "1.0.0",
+  "description": "Car Customer Data",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "nodemon": "nodemon index.js ",
+    "build": "cd client && npm run build",
+    "install-client": "cd client && npm install",
+    "heroku-postbuild": "npm run install-client && npm run build",
+    "client": "cd client && npm start"
+  },
+  "keywords": [],
+  "author": "Nitesh Kumar",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongodb": "^3.6.4",
+    "mongoose": "^5.11.15",
+    "nodemon": "^2.0.7",
+    "validator": "^13.5.2"
+  }
+}
